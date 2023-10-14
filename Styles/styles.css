@@ -1,0 +1,148 @@
+.company-container-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 8px 0px 8px;
+  background-color: #131417;
+  height: 7vh;
+}
+.company-container-header p {
+  color: #f0f8ff;
+  padding-left: 8px;
+}
+.company-container-header label {
+  margin-left: auto;
+}
+.company-container-header label .hamburger-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 32px;
+}
+.company-container-header label .hamburger-container .hamburger {
+  display: block;
+  background-color: #f0f8ff;
+  height: 3px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+nav {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  background-color: #131417;
+}
+nav a {
+  color: #f0f8ff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+nav ul {
+  padding: 10px;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 1.2em;
+  background-color: #131417;
+}
+
+.nav-toggle {
+  display: none;
+}
+.nav-toggle:checked ~ nav {
+  display: block;
+}
+
+.header-img {
+  width: 40px;
+  height: 40px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #14213d;
+}
+footer .footer-nav-container {
+  width: 50vw;
+}
+footer .footer-nav-container ul {
+  position: absolute;
+  width: 50vw;
+  background-color: #14213d;
+  padding: 10px;
+  list-style: none;
+  box-sizing: border-box;
+}
+footer .footer-nav-container ul a {
+  color: #f0f8ff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+footer .footer-nav-container ul li {
+  margin-left: 1.2em;
+  background-color: #14213d;
+}
+footer .company-container-footer {
+  width: 50vw;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: #f0f8ff;
+  font-size: 1.2rem;
+  padding: 10px;
+  box-sizing: border-box;
+}
+footer .company-container-footer .img-container-footer {
+  width: 50vw;
+}
+footer .company-container-footer .img-container-footer img {
+  float: right;
+  width: 60px;
+  height: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  min-height: 93vh;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  height: 93vh;
+}
+.img-container img {
+  max-width: 100%;
+}
+.img-container button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 280px;
+  height: 70px;
+  transform: translate(-50%, -50%);
+  background-color: #14213d;
+  color: #f0f8ff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Raleway", sans-serif;
+}
+
+.random {
+  width: 100vw;
+  height: 100vh;
+}/*# sourceMappingURL=styles.css.map */

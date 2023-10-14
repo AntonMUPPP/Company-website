@@ -1,0 +1,62 @@
+.company-container-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 8px 0px 8px;
+    background-color: $primary-color;
+    height: 7vh;
+    p {
+        color: $text-color;
+        padding-left: 8px;
+    }
+    
+    label{
+        margin-left: auto;
+        .hamburger-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 32px;
+            .hamburger{
+                display: block;
+                background-color: $text-color;
+                height: 3px;
+                width: 2em;
+                border-radius: 2px;
+                position: relative;
+            }
+        }
+    } 
+}
+
+nav{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    background-color: $primary-color;
+    a{
+        color: $text-color;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    ul{
+        padding: 10px;
+        list-style: none;
+        li{
+            margin-left: 1.2em;
+            background-color: $primary-color;
+        }
+    }
+}
+
+.nav-toggle{
+    display: none;
+    &:checked ~ nav{
+        display: block;
+    }
+}
+
+.header-img{
+    width: 40px;
+    height: 40px;
+}

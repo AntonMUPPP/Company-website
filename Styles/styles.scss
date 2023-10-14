@@ -1,0 +1,46 @@
+$primary-color: #131417;
+$secondary-color: #14213d;
+$accent-color: #fca311;
+$detail-color: #e5e5e5;
+$text-color: #f0f8ff;
+
+@import "./header";
+@import "./footer";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    min-height: 93vh;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    height: 93vh;
+    img{
+        max-width: 100%;
+    }
+    button{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        width: 280px;
+        height: 70px;
+        transform: translate(-50%, -50%);
+        background-color: $secondary-color;
+        color: $text-color;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+.random{
+    width: 100vw;
+    height: 100vh;
+}
