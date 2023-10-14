@@ -13,13 +13,13 @@
 .company-container-header label {
   margin-left: auto;
 }
-.company-container-header label .hamburger-container {
+.company-container-header .hamburger-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 32px;
 }
-.company-container-header label .hamburger-container .hamburger {
+.company-container-header .hamburger-container .hamburger {
   display: block;
   background-color: #f0f8ff;
   height: 3px;
@@ -45,6 +45,7 @@ nav ul {
 }
 nav ul li {
   margin-left: 1.2em;
+  margin-bottom: 12px;
   background-color: #131417;
 }
 
@@ -55,9 +56,46 @@ nav ul li {
   display: block;
 }
 
+.nav-toggle-label img {
+  width: 40px;
+  height: 40px;
+}
+
 .header-img {
   width: 40px;
   height: 40px;
+}
+
+main {
+  width: 100%;
+  min-height: 93vh;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  height: 93vh;
+}
+.img-container img {
+  max-width: 100%;
+}
+.img-container .product-button {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  top: 70%;
+  left: 50%;
+  width: 280px;
+  height: 70px;
+  transform: translate(-50%, -50%);
+  background-color: #14213d;
+  color: #f0f8ff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 
 footer {
@@ -86,6 +124,7 @@ footer .footer-nav-container ul a {
 }
 footer .footer-nav-container ul li {
   margin-left: 1.2em;
+  margin-bottom: 12px;
   background-color: #14213d;
 }
 footer .company-container-footer {
@@ -114,35 +153,8 @@ footer .company-container-footer .img-container-footer img {
   padding: 0;
 }
 
-main {
-  width: 100%;
-  min-height: 93vh;
-}
-
-.img-container {
-  display: flex;
-  justify-content: center;
-  height: 93vh;
-}
-.img-container img {
-  max-width: 100%;
-}
-.img-container button {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  width: 280px;
-  height: 70px;
-  transform: translate(-50%, -50%);
-  background-color: #14213d;
-  color: #f0f8ff;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  font-family: "Raleway", sans-serif;
-}
-
 .random {
   width: 100vw;
   height: 100vh;
+  background-color: #1e1f26;
 }/*# sourceMappingURL=styles.css.map */

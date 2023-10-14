@@ -1,0 +1,31 @@
+main{
+    width: 100%;
+    min-height: 93vh;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    height: 93vh;
+    img{
+        max-width: 100%;
+    }
+    .product-button{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        top: 70%;
+        left: 50%;
+        width: 280px;
+        height: 70px;
+        transform: translate(-50%, -50%);
+        background-color: $secondary-color;
+        color: $text-color;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+    }
+}
