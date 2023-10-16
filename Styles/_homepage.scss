@@ -1,12 +1,12 @@
 main{
     width: 100%;
-    min-height: 93vh;
+    min-height: 83vh;
 }
 
 .img-container{
     display: flex;
     justify-content: center;
-    height: 93vh;
+    height: 83vh;
     img{
         max-width: 100%;
     }
@@ -26,6 +26,20 @@ main{
         border: none;
         border-radius: 8px;
         font-family: 'Raleway', sans-serif;
-        text-align: center;
+    }
+}
+.desc-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent-color;
+    height: 10vh;
+    width: 100vw;
+    color: $text-color;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    p{
+        width: 280px;
     }
 }

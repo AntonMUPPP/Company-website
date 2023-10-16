@@ -5,27 +5,28 @@
   padding: 0px 8px 0px 8px;
   background-color: #131417;
   height: 7vh;
+  /* .hamburger-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 32px;
+      .hamburger{
+          display: block;
+          background-color: $text-color;
+          height: 3px;
+          width: 2em;
+          border-radius: 2px;
+          position: relative;
+      }
+  } */
 }
 .company-container-header p {
   color: #f0f8ff;
   padding-left: 8px;
+  font-family: "Space Mono", monospace;
 }
 .company-container-header label {
   margin-left: auto;
-}
-.company-container-header .hamburger-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 32px;
-}
-.company-container-header .hamburger-container .hamburger {
-  display: block;
-  background-color: #f0f8ff;
-  height: 3px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
 }
 
 nav {
@@ -38,6 +39,7 @@ nav a {
   color: #f0f8ff;
   text-decoration: none;
   font-size: 1.2rem;
+  font-family: "Space Mono", monospace;
 }
 nav ul {
   padding: 10px;
@@ -68,13 +70,13 @@ nav ul li {
 
 main {
   width: 100%;
-  min-height: 93vh;
+  min-height: 83vh;
 }
 
 .img-container {
   display: flex;
   justify-content: center;
-  height: 93vh;
+  height: 83vh;
 }
 .img-container img {
   max-width: 100%;
@@ -95,7 +97,22 @@ main {
   border: none;
   border-radius: 8px;
   font-family: "Raleway", sans-serif;
-  text-align: center;
+}
+
+.desc-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1f26;
+  height: 10vh;
+  width: 100vw;
+  color: #f0f8ff;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+.desc-text p {
+  width: 280px;
 }
 
 footer {
@@ -121,6 +138,7 @@ footer .footer-nav-container ul a {
   color: #f0f8ff;
   text-decoration: none;
   font-size: 1.2rem;
+  font-family: "Space Mono", monospace;
 }
 footer .footer-nav-container ul li {
   margin-left: 1.2em;
@@ -131,11 +149,11 @@ footer .company-container-footer {
   width: 50vw;
   height: 220px;
   display: flex;
-  flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  color: #f0f8ff;
-  font-size: 1.2rem;
+  color: #b96204;
+  font-size: 1.6rem;
+  font-family: "Space Mono", monospace;
   padding: 10px;
   box-sizing: border-box;
 }
@@ -144,8 +162,8 @@ footer .company-container-footer .img-container-footer {
 }
 footer .company-container-footer .img-container-footer img {
   float: right;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
 }
 
 * {
