@@ -101,6 +101,60 @@ main {
   width: 280px;
 }
 
+.history-text {
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  margin: 12px 0px 12px 0px;
+}
+.history-text p {
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  color: #f0f8ff;
+}
+
+.catchphrase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+  background-color: #131417;
+  margin-bottom: 12px;
+}
+.catchphrase p {
+  color: #f0f8ff;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+
+.employee-container {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0px 12px 0px;
+}
+.employee-container .employee-card {
+  width: 250px;
+  border-style: solid;
+  margin-bottom: 12px;
+  background-color: #14213d;
+}
+.employee-container .employee-text {
+  display: flex;
+  flex-direction: column;
+  color: #f0f8ff;
+}
+.employee-container .employee-text h3, .employee-container .employee-text h4, .employee-container .employee-text h5 {
+  font-family: "Space Mono", monospace;
+  margin: 0px 0px 8px 8px;
+}
+.employee-container .employee-text p {
+  font-size: 0.8rem;
+  font-family: "Raleway", sans-serif;
+  margin: 0px 0px 8px 8px;
+}
+
 .btn-container {
   width: 100vw;
   height: 10vh;
@@ -239,6 +293,15 @@ footer .company-container-footer .img-container-footer img {
   float: right;
   width: 100px;
   height: 100px;
+}
+footer .copyright {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+footer .copyright p {
+  color: #b96204;
+  font-family: "Space Mono", monospace;
 }
 
 * {

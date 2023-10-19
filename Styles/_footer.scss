@@ -46,4 +46,13 @@ footer{
             }
         }
     }
+    .copyright{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        p{
+            color: #b96204;
+            font-family: "Space Mono", monospace;
+        }
+    }
 }

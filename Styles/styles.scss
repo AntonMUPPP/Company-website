@@ -6,6 +6,7 @@ $text-color: #f0f8ff;
 
 @import "./header";
 @import "./homepage";
+@import "./about";
 @import "./products";
 @import "./footer";
 
@@ -21,3 +22,4 @@ html{
 main{
     background-color: $accent-color;
 }
+
