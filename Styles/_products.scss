@@ -1,3 +1,19 @@
+.products-desc-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent-color;
+    height: 10vh;
+    width: 100vw;
+    color: $text-color;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    p{
+        width: 280px;
+    }
+}
+
 .btn-container{
     width: 100vw;
     height: 10vh;
@@ -37,11 +53,10 @@
 .product-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin-top: 12px;
     gap: 16px;
-    width: 280px;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
     .card-container{
         width: 280px;
         background-color: $secondary-color;
@@ -75,8 +90,32 @@
             width: fit-content;
             font-family: "Space Mono", monospace;
             color: $text-color;
-            font-size: 12px;
+            font-size: 16px;
             margin-left: 2px;
+        }
+    }
+}
+
+@media (min-width: 550px){
+    .products-desc-text{
+        justify-content: flex-start;
+        p{
+            margin-left: 55px;
+            width: fit-content;
+            font-size: 1.6rem;
+        }
+    }
+    .btn-container{
+        display: none;
+    }
+    .product-container{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .product-heading-container{
+        justify-content: flex-start;
+        h2{
+            margin-left: 55px;
         }
     }
 }

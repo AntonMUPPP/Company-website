@@ -270,6 +270,22 @@ nav ul li {
     margin-left: 55px;
   }
 }
+.products-desc-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1f26;
+  height: 10vh;
+  width: 100vw;
+  color: #f0f8ff;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+.products-desc-text p {
+  width: 280px;
+}
+
 .btn-container {
   width: 100vw;
   height: 10vh;
@@ -309,11 +325,10 @@ nav ul li {
 .product-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   margin-top: 12px;
   gap: 16px;
-  width: 280px;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 .product-container .card-container {
   width: 280px;
@@ -350,10 +365,34 @@ nav ul li {
   width: fit-content;
   font-family: "Space Mono", monospace;
   color: #f0f8ff;
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 2px;
 }
 
+@media (min-width: 550px) {
+  .products-desc-text {
+    justify-content: flex-start;
+  }
+  .products-desc-text p {
+    margin-left: 55px;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.6rem;
+  }
+  .btn-container {
+    display: none;
+  }
+  .product-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .product-heading-container {
+    justify-content: flex-start;
+  }
+  .product-heading-container h2 {
+    margin-left: 55px;
+  }
+}
 .reference-container {
   width: 320px;
   margin: 12px 0px 12px 0px;
