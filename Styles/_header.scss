@@ -11,10 +11,12 @@
         font-size: 14px;
         font-family: "Space Mono", monospace;
     }
-    
+    .desktop-nav{
+        display: none;
+    }
     label{
         margin-left: auto;
-    } 
+    }
 }
 
 nav{
@@ -56,4 +58,39 @@ nav{
 .header-img{
     width: 40px;
     height: 40px;
+}
+
+@media (min-width: 550px){
+    .company-container-header{
+        height: 12vh;
+        label{
+            display: none;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        .desktop-nav{
+            margin-left: auto;
+            width: 70vw;
+            display: block;
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-evenly;
+                a{
+                    font-size: 2rem;
+                    font-family: "Space Mono", monospace;
+                    text-decoration: none;
+                    color: $text-color;
+                    &:hover{
+                        color: $detail-color;
+                    }
+                }
+            }
+        }
+    }
+    .header-img{
+        width: 70px;
+        height: 70px;
+    }    
 }

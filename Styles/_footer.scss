@@ -7,6 +7,8 @@ footer{
     .footer-nav-container{
         width: 50vw;
         ul{
+            display: flex;
+            flex-direction: column;
             position: absolute;
             width: 50vw;
             background-color: $secondary-color;
@@ -53,6 +55,32 @@ footer{
         p{
             color: #b96204;
             font-family: "Space Mono", monospace;
+        }
+    }
+}
+
+@media (min-width: 550px){
+    footer{
+        .footer-nav-container{
+            width: 90vw;
+            ul{
+                margin-top: 90px;
+                width: 90vw;
+                flex-direction: row;
+                justify-content: space-evenly;
+                a{
+                    font-size: 2rem;
+                    &:hover{
+                        color: $detail-color;
+                    }
+                }
+            }
+        }
+        .company-container-footer{
+            width: 10vw;
+        }
+        .copyright{
+            justify-content: flex-end;
         }
     }
 }
