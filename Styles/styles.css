@@ -172,12 +172,13 @@ nav ul li {
   }
 }
 .history-text {
-  width: 280px;
+  height: 210px;
   display: flex;
   justify-content: center;
-  margin: 12px 0px 12px 0px;
+  align-items: center;
 }
 .history-text p {
+  width: 280px;
   font-size: 1.2rem;
   font-family: "Raleway", sans-serif;
   color: #f0f8ff;
@@ -199,13 +200,26 @@ nav ul li {
   font-family: "Raleway", sans-serif;
 }
 
+.employee-heading-container {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #f0f8ff;
+  margin-bottom: 12px;
+}
+.employee-heading-container h2 {
+  width: 280px;
+  font-family: "Space Mono", monospace;
+  color: #f0f8ff;
+}
+
 .employee-container {
   display: flex;
   flex-direction: column;
-  margin: 12px 0px 12px 0px;
+  align-items: center;
 }
 .employee-container .employee-card {
   width: 250px;
+  height: 410px;
   border-style: solid;
   margin-bottom: 12px;
   background-color: #14213d;
@@ -225,6 +239,37 @@ nav ul li {
   margin: 0px 0px 8px 8px;
 }
 
+@media (min-width: 550px) {
+  .history-text {
+    justify-content: flex-start;
+    height: 170px;
+  }
+  .history-text p {
+    margin: 0px 55px 0px 55px;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.5rem;
+  }
+  .catchphrase {
+    justify-content: flex-start;
+  }
+  .catchphrase p {
+    margin-left: 55px;
+    font-size: 2rem;
+  }
+  .employee-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+  }
+  .employee-heading-container {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  .employee-heading-container h2 {
+    margin-left: 55px;
+  }
+}
 .btn-container {
   width: 100vw;
   height: 10vh;
@@ -250,12 +295,12 @@ nav ul li {
   font-size: 20px;
 }
 
-.heading-container {
+.product-heading-container {
   display: flex;
   justify-content: center;
   border-bottom: 2px solid #f0f8ff;
 }
-.heading-container h2 {
+.product-heading-container h2 {
   width: 280px;
   font-family: "Space Mono", monospace;
   color: #f0f8ff;
