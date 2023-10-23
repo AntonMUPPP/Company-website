@@ -23,12 +23,7 @@ html{
 
 main{
     background-color: $accent-color;
-}
-
-.centering{
-    display: flex;
-    justify-content: center;
-}
+}   
 
 @media (min-width: 550px){
     main{

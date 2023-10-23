@@ -451,7 +451,14 @@ nav ul li {
     max-width: 700px;
   }
 }
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .office-location {
+  margin-top: 12px;
   width: 300px;
   height: 250px;
 }
@@ -504,6 +511,21 @@ nav ul li {
   border-radius: 16px;
 }
 
+@media (min-width: 550px) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+  .office-location {
+    width: 400px;
+    height: 350px;
+  }
+  .office-location img {
+    width: 400px;
+    height: 350px;
+  }
+}
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -600,11 +622,6 @@ html {
 
 main {
   background-color: #1e1f26;
-}
-
-.centering {
-  display: flex;
-  justify-content: center;
 }
 
 @media (min-width: 550px) {
