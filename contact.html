@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500&display=swap" rel="stylesheet">
-    <title>Brick Industries - Home</title>
+    <title>Brick Industries - Contact</title>
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/Styles/styles.css">
 </head>
@@ -16,7 +16,7 @@
             <a href="index.html">
                 <img src="/images/logo.png" alt="" class="header-img">
             </a>
-            <h1>Brick Industries - Home</h1>
+            <h1>Brick Industries - Contact</h1>
             <label for="nav-toggle" class="nav-toggle-label" tabindex="0">
                 <img src="/images/setup.png" alt="">
             </label>
@@ -33,18 +33,26 @@
         </nav>
     </header>
     <main>
-        <div class="desc-text">
-            <p>
-                Welcome to Brick Industries<br>where we have the biggest assortment of bricks in the world!
-            </p>
+        <div class="centering">
+            <div class="office-location">
+                <img src="images/blaiddehrmantraut.png" alt="">
+                <p>Tel: <a href="tel:">070 728 38 19</a></p>
+                <p>Mail: <a href="mailto:">temp@mail.com</a></p>
+            </div>
         </div>
-        <div class="img-container">
-            <img src="/images/hero-img.png" alt="">
-            <a href="products.html" tabindex="-1">
-                <div class="product-button">
-                    <p>Go to our products</p>
-                </div>
-            </a>
+        <div class="centering">
+            <div class="contact" id="contact">
+                <p>Your mail</p>
+                <input type="text">
+                <p>Reason for contact</p>
+                <select name="reasons">
+                    <option value="purchase">Purchase of product or service</option>
+                    <option value="questions">Questions about the company</option>
+                    <option value="opinions">Opinions on website</option>
+                </select>
+                <textarea placeholder="Your text here..."></textarea>
+                <button onclick="hide()">Send</button>
+            </div>
         </div>
     </main>
     <footer>
@@ -69,5 +77,6 @@
             <p>Copyright @2023-2026 Brick Industries. <br>All rights reserved.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -192,11 +192,6 @@ main {
   color: #f0f8ff;
 }
 
-.centering {
-  display: flex;
-  justify-content: center;
-}
-
 .product-container {
   display: flex;
   flex-direction: column;
@@ -361,4 +356,62 @@ html {
 
 main {
   background-color: #1e1f26;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+}
+
+.office-location {
+  width: 300px;
+  height: 250px;
+}
+.office-location img {
+  width: 300px;
+  height: 200px;
+}
+.office-location p {
+  font-family: "Space Mono", monospace;
+  color: #f0f8ff;
+}
+
+.contact {
+  margin-top: 28px;
+  width: 300px;
+}
+.contact p {
+  font-family: "Space Mono", monospace;
+  color: #f0f8ff;
+}
+.contact input {
+  font-family: "Raleway", sans-serif;
+  border: none;
+  height: 20px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.contact select {
+  font-family: "Space Mono", monospace;
+  color: black;
+  border: none;
+  height: 20px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.contact textarea {
+  margin-top: 12px;
+  font-family: "Raleway", sans-serif;
+  resize: none;
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+.contact button {
+  width: 100%;
+  margin: 12px 0px 12px 0px;
+  border: none;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  border-radius: 16px;
 }/*# sourceMappingURL=styles.css.map */
