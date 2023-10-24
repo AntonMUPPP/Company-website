@@ -167,6 +167,9 @@ nav ul li {
     height: 100px;
     font-size: 1.6rem;
   }
+  .img-container .product-button:hover {
+    background-color: #854604;
+  }
   .desc-text {
     display: none;
   }
@@ -179,15 +182,12 @@ nav ul li {
 }
 .history-text p {
   width: 280px;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-family: "Raleway", sans-serif;
   color: #f0f8ff;
 }
 
 .catchphrase {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100vw;
   height: 60px;
   background-color: #131417;
@@ -195,6 +195,7 @@ nav ul li {
 }
 .catchphrase p {
   color: #f0f8ff;
+  margin-left: 30px;
   font-size: 24px;
   font-weight: bold;
   font-family: "Raleway", sans-serif;
@@ -224,6 +225,10 @@ nav ul li {
   margin-bottom: 12px;
   background-color: #14213d;
 }
+.employee-container .employee-card img {
+  width: 250px;
+  height: 250px;
+}
 .employee-container .employee-text {
   display: flex;
   flex-direction: column;
@@ -251,7 +256,9 @@ nav ul li {
     font-size: 1.5rem;
   }
   .catchphrase {
+    display: flex;
     justify-content: flex-start;
+    align-items: center;
   }
   .catchphrase p {
     margin-left: 55px;
@@ -392,6 +399,10 @@ nav ul li {
   .product-heading-container h2 {
     margin-left: 55px;
   }
+  .card-container button:hover {
+    background-color: #854604;
+    cursor: pointer;
+  }
 }
 .reference-container {
   display: flex;
@@ -422,8 +433,8 @@ nav ul li {
   gap: 12px;
 }
 .reference-container .reference .flex-group-left img {
-  max-width: 50px;
-  max-height: 50px;
+  width: 50px;
+  height: 50px;
 }
 .reference-container .reference .flex-group-left p {
   font-family: "Raleway", sans-serif;
@@ -455,6 +466,7 @@ nav ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 90vh;
 }
 
 .office-location {

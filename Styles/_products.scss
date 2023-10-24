@@ -118,4 +118,12 @@
             margin-left: 55px;
         }
     }
+    .card-container{
+        button{
+            &:hover{
+                background-color: #854604;
+                cursor: pointer;
+            }
+        }
+    }
 }
