@@ -622,6 +622,9 @@ footer .copyright p {
   footer .copyright {
     justify-content: flex-end;
   }
+  footer .copyright p {
+    margin-right: 40px;
+  }
 }
 * {
   margin: 0;
@@ -630,10 +633,12 @@ footer .copyright p {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 main {
   background-color: #1e1f26;
+  width: 100vw;
 }
 
 @media (min-width: 550px) {

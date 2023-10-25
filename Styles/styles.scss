@@ -19,10 +19,12 @@ $text-color: #f0f8ff;
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 main{
     background-color: $accent-color;
+    width: 100vw;
 }   
 
 @media (min-width: 550px){
